@@ -1,12 +1,13 @@
+import os
+import logging
+
 from flask import Flask
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from flask_login import LoginManager
-import logging
 from logging.handlers import SMTPHandler
 from logging.handlers import RotatingFileHandler
-import os
 
 
 app = Flask(__name__)
